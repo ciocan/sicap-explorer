@@ -1,0 +1,43 @@
+version: "3.2"
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.1
+    container_name: elasticsearch
+    volumes:
+      - $PWD/sicap-data:/usr/share/elasticsearch/data
+      - $PWD/sicap-backup:/usr/share/elasticsearch/backup
+      - $PWD/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - "9210:9200"
+      - "9310:9300"
+    environment:
+      - node.name=elasticsearch
+      - discovery.seed_hosts=elasticsearch
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
+      - "path.repo=/usr/share/elasticsearch/backup"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - elk
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.8.1
+    hostname: sicap
+    container_name: kibana
+    ports:
+      - "80:5601"
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+networks:
+  elk:
+    driver: bridge
