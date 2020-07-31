@@ -6,13 +6,13 @@ Datele sunt preluate din portalul de licitatii publice SEAP/SICAP în baza **Lic
 
 Seturile de date contin **22,055,794 achizitii directe** si **468,164 licitatii publice** incepand cu anul 2007 pana in data de 31 iulie 2020
 
-![](images/achizitii-directe.png)
+![Achizitii directe](images/achizitii-directe.png)
 
-![](images/dashboard.png)
+![Dashboard](images/dashboard.png)
 
-Cateva exemple cu tabloul in actiune pe canalul de [Youtube](https://www.youtube.com/channel/UCLmNkO-z3KeZDYmkp-u2u_Q/featured):
+Cateva exemple cu tabloul in actiune pe canalul de [YouTube](https://www.youtube.com/channel/UCLmNkO-z3KeZDYmkp-u2u_Q/featured):
 
-![https://www.youtube.com/channel/UCLmNkO-z3KeZDYmkp-u2u_Q/featured](images/youtube.png)
+[![Canal YouTube](images/youtube.png)](https://www.youtube.com/channel/UCLmNkO-z3KeZDYmkp-u2u_Q/featured)
 
 ## Cum se instaleaza pe masina proprie
 
