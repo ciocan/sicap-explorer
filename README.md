@@ -52,7 +52,7 @@ Dezarhiveaza arhiva in folderul de mai sus si incepe procesul de "restore" din K
 
 Un tutorial video cum poti face asta gasesti pe canalul de YouTube [aici](https://www.youtube.com/watch?v=piD_sQH1I98)
 
-**Pasul 4:** 
+**Pasul 4:**
 
 Importa [dashboardul](dashboards/achizitii-directe.json) in Kibana
 
@@ -66,5 +66,6 @@ Setarile initiale pentru Elasticsearch includ o memorie folosita de 2gb iar pent
 Este recomandat sa modifici memoria heap pentru Elasticsearch sa nu depaseasca jumatate din memoria disponibila.
 Mai mult detalii [aici](https://www.elastic.co/guide/en/elasticsearch/reference/master/heap-size.html) iar pentru Kibana [aici](https://www.elastic.co/guide/en/kibana/current/production.html#memory)
 
- 
+Acest proiect adopta principiile [Public Money / Public Code](https://publiccode.eu/) si doreste ca institutiile publice sa ofere access catre informatiile cu caracter public intr-un mod cat mai usor.
 
+[![Public Money / Public Code](./images/pmpc.jpg)](https://publiccode.eu/)

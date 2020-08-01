@@ -1,0 +1,15 @@
+{
+  "search.exclude": {
+    "**/.next": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "window.zoomLevel": 2,
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 14
+}
