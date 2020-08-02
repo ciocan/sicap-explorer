@@ -4,9 +4,11 @@
 
 Datele sunt preluate din portalul de licitatii publice SEAP/SICAP în baza **Licenței pentru Guvernare Deschisa v1.0**
 
-Seturile de date contin **22,055,794 achizitii directe** si **468,164 licitatii publice** incepand cu anul 2007 pana in data de 31 iulie 2020
+Seturile de date contin **22,101,610 achizitii directe** si **470,811 licitatii publice** incepand cu anul 2007 pana in data de 31 iulie 2020
 
-[![Achizitii directe](images/achizitii-directe.png)][#]
+[![Achizitii directe](images/achizitii-directe.png)](#)
+
+[![Achizitii directe](images/licitatii-publice.png)](#)
 
 [![Dashboard](images/dashboard.png)](#)
 
@@ -30,7 +32,7 @@ Cerinte minime pentru o functionare de baza
 
 **Pasul 1:**
 
-Descarca arhiva SICAP folosind [link-ul torrent]().
+Descarca arhiva SICAP folosind [link-ul torrent](arhiva-sicap.torrent).
 
 **Pasul 2:**
 
