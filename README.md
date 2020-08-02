@@ -2,9 +2,11 @@
 
 **sicap-explorer** este un tablou de vizualizare a licitatiilor publice si achizitiilor directe cu ajutorul aplicatiei open-source [Kibana](https://www.elastic.co/kibana)
 
-Datele sunt preluate din portalul de licitatii publice SEAP/SICAP în baza **Licenței pentru Guvernare Deschisa v1.0**
-
 Seturile de date contin **22,101,610 achizitii directe** si **470,811 licitatii publice** incepand cu anul 2007 pana in data de 31 iulie 2020
+
+Datele sunt preluate din portalul de licitatii publice SEAP/SICAP în baza **Licenței pentru Guvernare Deschisa v1.0** folosind utilitarul **[sicap-parser](https://github.com/arhiva-sicap/sicap-parser)**
+
+
 
 [![Achizitii directe](images/achizitii-directe.png)](#)
 
@@ -53,6 +55,42 @@ path.repo: /folder/backup
 Dezarhiveaza arhiva in folderul de mai sus si incepe procesul de "restore" din Kibana.
 
 Un tutorial video cum poti face asta gasesti pe canalul de YouTube [aici](https://www.youtube.com/watch?v=piD_sQH1I98)
+
+**Nota:** 
+
+Fisierul torrent contine urmatoarele fisiere:
+```bash
+ 20M Aug  1 21:41 achizitii-directe-2007.json.gz
+ 24M Aug  1 21:41 achizitii-directe-2008.json.gz
+236M Aug  1 21:43 achizitii-directe-2009.json.gz
+447M Aug  1 21:47 achizitii-directe-2010.json.gz
+541M Aug  1 21:50 achizitii-directe-2011.json.gz
+587M Aug  1 21:54 achizitii-directe-2012.json.gz
+628M Aug  1 21:59 achizitii-directe-2013.json.gz
+738M Aug  1 22:05 achizitii-directe-2014.json.gz
+836M Aug  1 22:11 achizitii-directe-2015.json.gz
+1.3G Aug  1 22:20 achizitii-directe-2016.json.gz
+2.3G Aug  1 22:35 achizitii-directe-2017.json.gz
+1.9G Aug  1 22:48 achizitii-directe-2018.json.gz
+1.7G Aug  1 23:02 achizitii-directe-2019.json.gz
+835M Aug  1 22:33 achizitii-directe-2020.json.gz
+ 35G Aug  2 00:04 arhiva-sicap-elasticsearch-snapshot.tar.gz
+412M Aug  1 21:35 licitatii-publice.json.gz
+```
+
+**arhiva-sicap-elasticsearch-snapshot.tar.gz** contine informatiile necesare procesului de restore in Elasticsearch. Se dezarhiveaza ocupand aproximativ 50gb. Durata totala de restore este aproximativ 20-30 minute, in functie de puterea procesorului.
+
+Celelalte fisiere sunt arhivele cu informatiile defalcate pe ani  in format json. Se pot indexa cu ajutorul utilitarului [elasticdump](https://github.com/elasticsearch-dump/elasticsearch-dump)
+
+```bash
+elasticdump \
+  --input=http://localhost:9200/licitatii-publice \
+  --output=./licitatii-publice.json \
+  --limit=10000 \
+  --concurrency=200
+```
+
+*Durata totala a importarii documentelor json este de 4-8 ore, in functie de puterea procesorului.*
 
 **Pasul 4:**
 
