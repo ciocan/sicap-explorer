@@ -1,0 +1,712 @@
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "authority": {
+          "properties": {
+            "city": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "county": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "entityId": {
+              "type": "long"
+            },
+            "entityName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "fiscalNumber": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "isUtility": {
+              "type": "boolean"
+            },
+            "numericFiscalNumber": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "url": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "isNew": {
+          "type": "boolean"
+        },
+        "istoric": {
+          "type": "boolean"
+        },
+        "item": {
+          "properties": {
+            "caDecisionDeadline": {
+              "type": "date"
+            },
+            "closingValue": {
+              "type": "float"
+            },
+            "contractingAuthority": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cpvCategoryId": {
+              "type": "long"
+            },
+            "cpvCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "directAcquisitionId": {
+              "type": "long"
+            },
+            "directAcquisitionName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "estimatedValueOtherCurrency": {
+              "type": "float"
+            },
+            "estimatedValueRon": {
+              "type": "float"
+            },
+            "finalizationDate": {
+              "type": "date"
+            },
+            "isOpenForContractCorrection": {
+              "type": "boolean"
+            },
+            "isOpenForCorrection": {
+              "type": "boolean"
+            },
+            "publicationDate": {
+              "type": "date"
+            },
+            "supplier": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "supplierDecisionDeadline": {
+              "type": "date"
+            },
+            "sysDirectAcquisitionState": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "uniqueIdentificationCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "processed": {
+          "type": "boolean"
+        },
+        "publicDirectAcquisition": {
+          "properties": {
+            "assignedCAUser": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "assignedSupplierUser": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "caDecisionDate": {
+              "type": "date"
+            },
+            "caDecisionDeadline": {
+              "type": "date"
+            },
+            "caRejectionReason": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "closingValue": {
+              "type": "float"
+            },
+            "contractingAuthorityID": {
+              "type": "long"
+            },
+            "correctionReason": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cpvCode": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "daAwardNoticeID": {
+              "type": "long"
+            },
+            "deliveryCondition": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "directAcquisitionDescription": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "directAcquisitionID": {
+              "type": "long"
+            },
+            "directAcquisitionItems": {
+              "properties": {
+                "assignedUserEmail": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "catalogItemCode": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "catalogItemDescription": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "catalogItemHistoryID": {
+                  "type": "long"
+                },
+                "catalogItemID": {
+                  "type": "long"
+                },
+                "catalogItemName": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "catalogItemPrice": {
+                  "type": "float"
+                },
+                "cpvCode": {
+                  "properties": {
+                    "id": {
+                      "type": "long"
+                    },
+                    "localeKey": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "text": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "directAcquisitionItemID": {
+                  "type": "long"
+                },
+                "hasQuantityCorrection": {
+                  "type": "boolean"
+                },
+                "imageThumbUrl": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "imageUrl": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "isRejectedBySupplier": {
+                  "type": "boolean"
+                },
+                "itemClosingPrice": {
+                  "type": "float"
+                },
+                "itemEstimatedPrice": {
+                  "type": "float"
+                },
+                "itemMeasureUnit": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "itemQuantity": {
+                  "type": "long"
+                },
+                "itemRequestedQuantity": {
+                  "type": "long"
+                },
+                "secondCurrencyEstimatedPrice": {
+                  "type": "float"
+                },
+                "sysCatalogItemStateID": {
+                  "type": "long"
+                }
+              }
+            },
+            "directAcquisitionName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "documents": {
+              "properties": {
+                "clientFileName": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "directAcquisitionDocumentID": {
+                  "type": "long"
+                },
+                "documentID": {
+                  "type": "long"
+                },
+                "documentName": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "tempPath": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "estimatedValue": {
+              "type": "float"
+            },
+            "finalizationDate": {
+              "type": "date"
+            },
+            "financingType": {
+              "type": "boolean"
+            },
+            "isOpenForContractCorrection": {
+              "type": "boolean"
+            },
+            "isOpenForCorrection": {
+              "type": "boolean"
+            },
+            "paymentCondition": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "publicationDate": {
+              "type": "date"
+            },
+            "secondCurrencyClosingValue": {
+              "type": "float"
+            },
+            "secondCurrencyEstimatedValue": {
+              "type": "float"
+            },
+            "supplierDecisionDate": {
+              "type": "date"
+            },
+            "supplierDecisionDeadline": {
+              "type": "date"
+            },
+            "supplierId": {
+              "type": "long"
+            },
+            "supplierRejectionReason": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "sysAcquisitionContractType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysAcquisitionContractTypeID": {
+              "type": "long"
+            },
+            "sysDirectAcquisitionState": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysDirectAcquisitionStateID": {
+              "type": "long"
+            },
+            "sysEuropeanFund": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysEuropeanFundID": {
+              "type": "long"
+            },
+            "uniqueIdentificationCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "supplier": {
+          "properties": {
+            "city": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "countryId": {
+              "type": "long"
+            },
+            "county": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "entityId": {
+              "type": "long"
+            },
+            "entityName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "fiscalNumber": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "numericFiscalNumber": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "postalCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
