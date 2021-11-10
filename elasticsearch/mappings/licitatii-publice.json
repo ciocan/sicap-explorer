@@ -1,0 +1,2564 @@
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "istoric": {
+          "type": "boolean"
+        },
+        "item": {
+          "properties": {
+            "caNoticeId": {
+              "type": "long"
+            },
+            "contractTitle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "contractingAuthorityNameAndFN": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cpvCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cpvCodeAndName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "currencyCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "hasSubsequentContracts": {
+              "type": "boolean"
+            },
+            "isPPP": {
+              "type": "boolean"
+            },
+            "isUtility": {
+              "type": "boolean"
+            },
+            "nationalId": {
+              "type": "long"
+            },
+            "noticeId": {
+              "type": "long"
+            },
+            "noticeNo": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "noticeStateDate": {
+              "type": "date"
+            },
+            "procedureId": {
+              "type": "long"
+            },
+            "ronContractValue": {
+              "type": "long"
+            },
+            "sysAcquisitionContractType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysContractAssigmentType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysNoticeState": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysNoticeTypeId": {
+              "type": "long"
+            },
+            "sysProcedureState": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysProcedureType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "noticeContracts": {
+          "properties": {
+            "items": {
+              "properties": {
+                "caNoticeContractId": {
+                  "type": "long"
+                },
+                "caNoticeId": {
+                  "type": "long"
+                },
+                "contractDate": {
+                  "type": "date"
+                },
+                "contractId": {
+                  "type": "long"
+                },
+                "contractNo": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "contractTitle": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "contractType": {
+                  "type": "long"
+                },
+                "contractValue": {
+                  "type": "long"
+                },
+                "contractValueMaxOffer": {
+                  "type": "float"
+                },
+                "contractValueMinOffer": {
+                  "type": "long"
+                },
+                "currency": {
+                  "properties": {
+                    "id": {
+                      "type": "long"
+                    },
+                    "localeKey": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "text": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "currencyRate": {
+                  "type": "long"
+                },
+                "defaultCurrencyContractValue": {
+                  "type": "long"
+                },
+                "defaultCurrencyContractValueMaxOffer": {
+                  "type": "long"
+                },
+                "defaultCurrencyContractValueMinOffer": {
+                  "type": "long"
+                },
+                "hasElectronicContract": {
+                  "type": "boolean"
+                },
+                "lotsCaption": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "lotsNoCaption": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "noticeNo": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "winner": {
+                  "properties": {
+                    "address": {
+                      "properties": {
+                        "address": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "buyerProfileUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "caMainAddressUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "city": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "cityItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "country": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "countryID": {
+                          "type": "long"
+                        },
+                        "countryItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "county": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "entityId": {
+                          "type": "long"
+                        },
+                        "internetAddressesUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "isSME": {
+                          "type": "boolean"
+                        },
+                        "nationalIDNumber": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "nationalIDNumberInt": {
+                          "type": "long"
+                        },
+                        "noticeEntityAddressId": {
+                          "type": "long"
+                        },
+                        "noticeId": {
+                          "type": "long"
+                        },
+                        "nutsCodeID": {
+                          "type": "long"
+                        },
+                        "nutsCodeItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "officialName": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "postalCode": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "sysNoticeEntityTypeID": {
+                          "type": "long"
+                        }
+                      }
+                    },
+                    "caNoticeId": {
+                      "type": "long"
+                    },
+                    "entityId": {
+                      "type": "long"
+                    },
+                    "fiscalNumber": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fiscalNumberInt": {
+                      "type": "long"
+                    },
+                    "id": {
+                      "type": "long"
+                    },
+                    "name": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "noticeEntityAddressId": {
+                      "type": "long"
+                    },
+                    "source": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "winnerCaption": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "winners": {
+                  "properties": {
+                    "address": {
+                      "properties": {
+                        "address": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "buyerProfileUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "caMainAddressUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "city": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "cityItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "country": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "countryID": {
+                          "type": "long"
+                        },
+                        "countryItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "county": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "entityId": {
+                          "type": "long"
+                        },
+                        "internetAddressesUrl": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "isSME": {
+                          "type": "boolean"
+                        },
+                        "nationalIDNumber": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "nationalIDNumberInt": {
+                          "type": "long"
+                        },
+                        "noticeEntityAddressId": {
+                          "type": "long"
+                        },
+                        "noticeId": {
+                          "type": "long"
+                        },
+                        "nutsCodeID": {
+                          "type": "long"
+                        },
+                        "nutsCodeItem": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "officialName": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "postalCode": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "sysNoticeEntityTypeID": {
+                          "type": "long"
+                        }
+                      }
+                    },
+                    "caNoticeId": {
+                      "type": "long"
+                    },
+                    "entityId": {
+                      "type": "long"
+                    },
+                    "fiscalNumber": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fiscalNumberInt": {
+                      "type": "long"
+                    },
+                    "id": {
+                      "type": "long"
+                    },
+                    "name": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "noticeEntityAddressId": {
+                      "type": "long"
+                    },
+                    "source": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "total": {
+              "type": "long"
+            }
+          }
+        },
+        "publicNotice": {
+          "properties": {
+            "caNoticeEdit_New": {
+              "properties": {
+                "publicationDetailsModel": {
+                  "properties": {
+                    "caPublicationDate": {
+                      "type": "date"
+                    },
+                    "jouePublicationNumber": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "noticeNo": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "publicationDate": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "section0_Vehicles": {
+                  "properties": {
+                    "caNoticeId": {
+                      "type": "long"
+                    },
+                    "canEdit": {
+                      "type": "boolean"
+                    },
+                    "canView": {
+                      "type": "boolean"
+                    },
+                    "isVehicleDirective": {
+                      "type": "boolean"
+                    },
+                    "section63Info": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "vehicles": {
+                      "type": "long"
+                    },
+                    "vehiclesClean": {
+                      "type": "long"
+                    },
+                    "vehiclesZeroEmission": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "section1_New": {
+                  "properties": {
+                    "section1_1": {
+                      "properties": {
+                        "caAddress": {
+                          "properties": {
+                            "address": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "buyerProfileUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "caMainAddressUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "city": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "cityItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "countryID": {
+                              "type": "long"
+                            },
+                            "countryItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "county": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "entityId": {
+                              "type": "long"
+                            },
+                            "internetAddressesUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "isSME": {
+                              "type": "boolean"
+                            },
+                            "nationalIDNumber": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "nationalIDNumberInt": {
+                              "type": "long"
+                            },
+                            "noticeEntityAddressId": {
+                              "type": "long"
+                            },
+                            "noticeId": {
+                              "type": "long"
+                            },
+                            "nutsCodeItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "officialName": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "postalCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "sysNoticeEntityTypeID": {
+                              "type": "long"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "section2_New": {
+                  "properties": {
+                    "section2_1_New": {
+                      "properties": {
+                        "contractTitle": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "currency": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "frameworkContractValue": {
+                          "type": "long"
+                        },
+                        "hasLots": {
+                          "type": "boolean"
+                        },
+                        "highestOffer": {
+                          "type": "long"
+                        },
+                        "lowestOffer": {
+                          "type": "long"
+                        },
+                        "mainCPVCode": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "referenceNumber": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "shortDescription": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "sysAcquisitionContractType": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "totalAcquisitionValue": {
+                          "type": "float"
+                        },
+                        "totalRONAcquisitionValueForPAAP": {
+                          "type": "float"
+                        }
+                      }
+                    },
+                    "section2_2_New": {
+                      "properties": {
+                        "descriptionList": {
+                          "properties": {
+                            "completionDate": {
+                              "type": "date"
+                            },
+                            "contractTitle": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "currency": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "dayDuration": {
+                              "type": "long"
+                            },
+                            "estimatedValue": {
+                              "type": "long"
+                            },
+                            "euProject": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "isEUFunded": {
+                              "type": "boolean"
+                            },
+                            "lotInfo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "lotNumber": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "mainCPVCodes": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "mainLocation": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "maxEstimatedValue": {
+                              "type": "float"
+                            },
+                            "minEstimatedValue": {
+                              "type": "float"
+                            },
+                            "monthDuration": {
+                              "type": "long"
+                            },
+                            "noticeLotID": {
+                              "type": "long"
+                            },
+                            "nutsCode": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "secondaryCPVCodes": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "shortDescription": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "showSysAwardCriteriaType": {
+                              "type": "boolean"
+                            },
+                            "startDate": {
+                              "type": "date"
+                            },
+                            "supplementaryInformation": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "sysAwardCriteriaType": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "sysAwardCriteriaTypeId": {
+                              "type": "long"
+                            },
+                            "sysFinancingType": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "caNoticeEdit_New_U": {
+              "properties": {
+                "publicationDetailsModel": {
+                  "properties": {
+                    "caPublicationDate": {
+                      "type": "date"
+                    },
+                    "jouePublicationNumber": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "noticeNo": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "publicationDate": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "section0_Vehicles": {
+                  "properties": {
+                    "caNoticeId": {
+                      "type": "long"
+                    },
+                    "canEdit": {
+                      "type": "boolean"
+                    },
+                    "canView": {
+                      "type": "boolean"
+                    },
+                    "isVehicleDirective": {
+                      "type": "boolean"
+                    },
+                    "section63Info": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "vehiclesClean": {
+                      "type": "long"
+                    },
+                    "vehiclesZeroEmission": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "section1_New_U": {
+                  "properties": {
+                    "section1_1": {
+                      "properties": {
+                        "caAddress": {
+                          "properties": {
+                            "address": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "buyerProfileUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "caMainAddressUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "city": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "cityItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "countryID": {
+                              "type": "long"
+                            },
+                            "countryItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "county": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "entityId": {
+                              "type": "long"
+                            },
+                            "internetAddressesUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "isSME": {
+                              "type": "boolean"
+                            },
+                            "nationalIDNumber": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "nationalIDNumberInt": {
+                              "type": "long"
+                            },
+                            "noticeEntityAddressId": {
+                              "type": "long"
+                            },
+                            "noticeId": {
+                              "type": "long"
+                            },
+                            "nutsCodeItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "officialName": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "postalCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "sysNoticeEntityTypeID": {
+                              "type": "long"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "section1_2_U": {
+                      "properties": {
+                        "caNoticeId": {
+                          "type": "long"
+                        },
+                        "canEdit": {
+                          "type": "boolean"
+                        },
+                        "isAwardedByCentralAcquisitionOrgan": {
+                          "type": "boolean"
+                        },
+                        "isCommonProcurement": {
+                          "type": "boolean"
+                        },
+                        "otherCANoticeAdresses": {
+                          "properties": {
+                            "address": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "attentionTo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "buyerProfileUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "caMainAddressUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "city": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "cityItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "contactPerson": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "contactPoints": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "countryID": {
+                              "type": "long"
+                            },
+                            "countryItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "county": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "localeKey": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "email": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "entityId": {
+                              "type": "long"
+                            },
+                            "fax": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "internetAddressesUrl": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "isSME": {
+                              "type": "boolean"
+                            },
+                            "nationalIDNumber": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "noticeEntityAddressId": {
+                              "type": "long"
+                            },
+                            "noticeId": {
+                              "type": "long"
+                            },
+                            "nutsCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "nutsCodeID": {
+                              "type": "long"
+                            },
+                            "nutsCodeItem": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "officialName": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "phone": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "postalCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "sysNoticeEntityTypeID": {
+                              "type": "long"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "section1_4_U": {
+                      "properties": {
+                        "caNoticeId": {
+                          "type": "long"
+                        },
+                        "caType": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "caTypeId": {
+                          "type": "long"
+                        },
+                        "ifOthersThenSpecify": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "section1_6_U": {
+                      "properties": {
+                        "caNoticeId": {
+                          "type": "long"
+                        },
+                        "ifOthersThenSpecify": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "mainActivity": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "mainActivityId": {
+                          "type": "long"
+                        }
+                      }
+                    }
+                  }
+                },
+                "section2_New_U": {
+                  "properties": {
+                    "section2_1_New_U": {
+                      "properties": {
+                        "contractTitle": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "currency": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "frameworkContractValue": {
+                          "type": "long"
+                        },
+                        "hasLots": {
+                          "type": "boolean"
+                        },
+                        "highestOffer": {
+                          "type": "long"
+                        },
+                        "isPublishingAgreed": {
+                          "type": "boolean"
+                        },
+                        "lowestOffer": {
+                          "type": "long"
+                        },
+                        "mainCPVCode": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "numberOfLots": {
+                          "type": "long"
+                        },
+                        "referenceNumber": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "shortDescription": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "sysAcquisitionContractType": {
+                          "properties": {
+                            "id": {
+                              "type": "long"
+                            },
+                            "localeKey": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "text": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "totalAcquisitionValue": {
+                          "type": "long"
+                        },
+                        "totalRONAcquisitionValueForPAAP": {
+                          "type": "long"
+                        }
+                      }
+                    },
+                    "section2_2_New_U": {
+                      "properties": {
+                        "descriptionList": {
+                          "properties": {
+                            "completionDate": {
+                              "type": "date"
+                            },
+                            "contractTitle": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "currency": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "dayDuration": {
+                              "type": "long"
+                            },
+                            "estimatedValue": {
+                              "type": "long"
+                            },
+                            "euProject": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "isEUFunded": {
+                              "type": "boolean"
+                            },
+                            "lotInfo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "lotNumber": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "mainCPVCodes": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "mainLocation": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "maxEstimatedValue": {
+                              "type": "float"
+                            },
+                            "minEstimatedValue": {
+                              "type": "float"
+                            },
+                            "monthDuration": {
+                              "type": "long"
+                            },
+                            "noticeLotID": {
+                              "type": "long"
+                            },
+                            "nutsCode": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "secondaryCPVCodes": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "shortDescription": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "showSysAwardCriteriaType": {
+                              "type": "boolean"
+                            },
+                            "startDate": {
+                              "type": "date"
+                            },
+                            "supplementaryInformation": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "sysAwardCriteriaType": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "sysAwardCriteriaTypeId": {
+                              "type": "long"
+                            },
+                            "sysFinancingType": {
+                              "properties": {
+                                "id": {
+                                  "type": "long"
+                                },
+                                "text": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "isPublishingAgreed": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "caNoticeID": {
+              "type": "long"
+            },
+            "contractingAuthorityType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "entityId": {
+              "type": "long"
+            },
+            "isPPP": {
+              "type": "boolean"
+            },
+            "isUtilityContract": {
+              "type": "boolean"
+            },
+            "noticeID": {
+              "type": "long"
+            },
+            "noticeNumber": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "prevPubSysNoticeType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "previousPublicationNoticeID": {
+              "type": "long"
+            },
+            "procedureHasLots": {
+              "type": "boolean"
+            },
+            "procedureId": {
+              "type": "long"
+            },
+            "procedureType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "publicationDate": {
+              "type": "date"
+            },
+            "sysContractAssignmentTypeID": {
+              "type": "long"
+            },
+            "sysNoticeState": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysNoticeType": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "sysNoticeVersion": {
+              "properties": {
+                "id": {
+                  "type": "long"
+                },
+                "localeKey": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "title": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "totalNotAwardedLots": {
+              "type": "long"
+            }
+          }
+        }
+      }
+    }
+  }
+}
